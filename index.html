@@ -3,40 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0b1020">
-<title>CG Editor Chovaram | Free Video Studio</title>
+<meta name="theme-color" content="#111827">
+<title>Cg Editor Chovaram | Free Video Studio</title>
 <style>
-:root{--bg:#0b1020;--panel:#151d31;--muted:#a8b4ca;--line:#2b3954;--a:#8b5cf6;--b:#06b6d4}
+:root{--bg:#0b1020;--panel:#151d31;--muted:#9ca9c2;--accent:#8b5cf6;--accent2:#06b6d4}
 *{box-sizing:border-box}body{margin:0;background:linear-gradient(145deg,#0b1020,#111a30);color:#f8fafc;font-family:system-ui,-apple-system,"Noto Sans Devanagari",sans-serif}
-header{position:sticky;top:0;z-index:5;padding:14px 16px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:12px;background:#0d1425ed;backdrop-filter:blur(12px)}
-.logo{width:44px;height:44px;border-radius:13px;background:linear-gradient(135deg,var(--a),var(--b));display:grid;place-items:center;font-size:22px}.brand{font-weight:850;letter-spacing:.3px}.sub{font-size:11px;color:#a5b4fc;letter-spacing:1.5px}
+header{padding:18px 16px;border-bottom:1px solid #26324a;display:flex;align-items:center;gap:12px;position:sticky;top:0;background:#0d1425ed;backdrop-filter:blur(12px);z-index:2}
+.logo{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#8b5cf6,#06b6d4);display:grid;place-items:center;font-size:21px}
+.brand{font-weight:850;letter-spacing:.3px}.sub{font-size:11px;color:#a5b4fc;letter-spacing:1.5px}
 main{max-width:1000px;margin:auto;padding:18px 14px 40px}.hero{margin:10px 0 18px}.hero h1{font-size:clamp(25px,6vw,38px);margin:0 0 5px}.hero p{margin:0;color:var(--muted);font-size:14px}
-.layout{display:grid;grid-template-columns:1fr;gap:16px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 12px 35px #0003}.panel h2{font-size:17px;margin:0 0 14px}
-label{display:block;font-size:13px;color:#cbd5e1;margin:12px 0 6px}input,textarea,select{width:100%;border:1px solid #34435f;background:#0d1528;color:#fff;border-radius:11px;padding:12px;font:inherit;font-size:14px;outline:none}textarea{min-height:76px;resize:vertical}input[type=file]{padding:9px}input[type=range]{padding:0;accent-color:var(--a)}input[type=color]{height:45px;padding:5px}
+.layout{display:grid;grid-template-columns:1fr;gap:16px}.panel{background:#151d31;border:1px solid #293650;border-radius:18px;padding:16px;box-shadow:0 12px 35px #0003}.panel h2{font-size:17px;margin:0 0 14px}
+label{display:block;font-size:13px;color:#cbd5e1;margin:12px 0 6px}input,textarea,select{width:100%;border:1px solid #34435f;background:#0d1528;color:#fff;border-radius:11px;padding:12px;font:inherit;font-size:14px;outline:none}textarea{min-height:86px;resize:vertical}input[type=file]{padding:9px}input[type=range]{padding:0;accent-color:#8b5cf6}input[type=color]{height:45px;padding:5px}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.btn{border:0;border-radius:12px;padding:13px 16px;font-weight:750;font-size:14px;cursor:pointer}.primary{background:linear-gradient(100deg,#7c3aed,#0891b2);color:white;width:100%;margin-top:14px}.secondary{background:#26334d;color:#e2e8f0}.btn:disabled{opacity:.5;cursor:not-allowed}
-.preview-wrap{display:flex;justify-content:center;background:#080d18;border-radius:14px;padding:12px}.preview-wrap canvas{width:min(100%,330px);height:auto;border-radius:10px;background:#172554;display:block}
-.actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:10px}.status{font-size:12px;color:#a5f3fc;min-height:20px;margin-top:9px}.hint{font-size:12px;line-height:1.55;color:#9ca9c2;margin-top:12px}.pill{display:inline-block;padding:4px 8px;background:#1d3150;border-radius:30px;font-size:11px;color:#a5f3fc;margin-bottom:10px}
-.photo-list{font-size:12px;color:#cbd5e1;margin-top:7px;line-height:1.6}.meter{height:7px;border-radius:20px;background:#26334d;overflow:hidden;margin-top:8px}.meter>div{height:100%;width:0;background:linear-gradient(90deg,var(--a),var(--b))}
+.preview-wrap{display:flex;justify-content:center;background:#080d18;border-radius:14px;padding:12px}.preview-wrap canvas{width:min(100%,330px);height:auto;aspect-ratio:9/16;border-radius:10px;background:#172554}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:10px}.status{font-size:12px;color:#a5b4fc;min-height:18px;margin-top:9px}.hint{font-size:12px;line-height:1.5;color:#9ca9c2;margin-top:12px}.pill{display:inline-block;padding:4px 8px;background:#1d3150;border-radius:30px;font-size:11px;color:#a5f3fc;margin-bottom:10px}
 footer{text-align:center;color:#73819c;font-size:12px;padding:20px}
-@media(min-width:760px){.layout{grid-template-columns:1fr 1fr}.preview-panel{grid-row:span 3}}
+@media(min-width:760px){.layout{grid-template-columns:1fr 1fr}.preview-panel{grid-row:span 2}}
 </style>
 </head>
 <body>
 <header><div class="logo">🎬</div><div><div class="brand">CG EDITOR CHOVARAM</div><div class="sub">FREE VIDEO STUDIO</div></div></header>
 <main>
-<section class="hero"><span class="pill">मोबाइल ब्राउज़र वीडियो एडिटर</span><h1>अपना वीडियो खुद बनाइए ✨</h1><p>कई फोटो, टेक्स्ट, म्यूजिक और इफेक्ट जोड़कर वीडियो तैयार करें।</p></section>
+<section class="hero"><span class="pill">100% browser-based editor</span><h1>अपना वीडियो खुद बनाइए ✨</h1><p>फोटो, टेक्स्ट और आवाज़ जोड़कर मोबाइल में वीडियो तैयार करें।</p></section>
 <div class="layout">
 <section class="panel">
 <h2>① वीडियो की सामग्री</h2>
-<label for="photos">एक या अधिक फोटो चुनें</label><input id="photos" type="file" accept="image/*" multiple>
-<div class="photo-list" id="photoList">अभी कोई फोटो नहीं चुनी गई।</div>
-<label for="music">बैकग्राउंड म्यूजिक (वैकल्पिक)</label><input id="music" type="file" accept="audio/*">
-<div class="photo-list" id="musicName">कोई म्यूजिक नहीं चुना गया।</div>
-<label for="title">वीडियो का मुख्य टेक्स्ट</label><input id="title" maxlength="70" value="Cg Editor Chovaram">
-<label for="caption">छोटा विवरण</label><textarea id="caption" maxlength="240">आपकी कल्पना, हमारा डिज़ाइन।</textarea>
+<label for="photo">अपनी फोटो चुनें (वैकल्पिक)</label><input id="photo" type="file" accept="image/*">
+<label for="title">वीडियो में दिखने वाला मुख्य टेक्स्ट</label><input id="title" maxlength="70" value="Cg Editor Chovaram">
+<label for="caption">छोटा विवरण / वॉइस टेक्स्ट</label><textarea id="caption" maxlength="240" placeholder="यहाँ अपना संदेश लिखें...">आपकी कल्पना, हमारा डिज़ाइन।</textarea>
 <div class="row">
-<div><label for="duration">वीडियो अवधि</label><select id="duration"><option value="5">5 सेकंड</option><option value="10" selected>10 सेकंड</option><option value="15">15 सेकंड</option><option value="20">20 सेकंड</option><option value="30">30 सेकंड</option><option value="60">60 सेकंड</option></select></div>
-<div><label for="ratio">वीडियो आकार</label><select id="ratio"><option value="portrait">9:16 मोबाइल</option><option value="landscape">16:9 YouTube</option><option value="square">1:1 स्क्वायर</option></select></div>
+<div><label for="duration">वीडियो अवधि</label><select id="duration"><option value="5">5 सेकंड</option><option value="10" selected>10 सेकंड</option><option value="15">15 सेकंड</option><option value="20">20 सेकंड</option></select></div>
+<div><label for="voice">हिंदी आवाज़</label><select id="voice"><option value="off">आवाज़ बंद</option><option value="on">ब्राउज़र की आवाज़</option></select></div>
 </div>
 </section>
 <section class="panel">
@@ -45,9 +42,8 @@ footer{text-align:center;color:#73819c;font-size:12px;padding:20px}
 <div><label for="bg1">पहला रंग</label><input id="bg1" type="color" value="#312e81"></div>
 <div><label for="bg2">दूसरा रंग</label><input id="bg2" type="color" value="#0891b2"></div>
 </div>
-<label for="fontSize">टेक्स्ट का आकार</label><input id="fontSize" type="range" min="28" max="68" value="44">
-<label for="motion">फोटो इफेक्ट</label><select id="motion"><option value="zoom">स्लो ज़ूम</option><option value="slide">स्लाइड इफेक्ट</option><option value="glow">ग्लो इफेक्ट</option><option value="fade">फेड इफेक्ट</option></select>
-<label for="fit">फोटो दिखाने का तरीका</label><select id="fit"><option value="cover">फ्रेम भरें</option><option value="contain">पूरी फोटो दिखाएँ</option></select>
+<label for="fontSize">टेक्स्ट का आकार</label><input id="fontSize" type="range" min="28" max="64" value="44">
+<label for="motion">वीडियो इफेक्ट</label><select id="motion"><option value="zoom">स्लो ज़ूम</option><option value="slide">स्लाइड इफेक्ट</option><option value="glow">ग्लो इफेक्ट</option></select>
 <button class="btn secondary" id="previewBtn" style="width:100%;margin-top:14px">👁️ प्रीव्यू अपडेट करें</button>
 </section>
 <section class="panel preview-panel">
@@ -55,74 +51,51 @@ footer{text-align:center;color:#73819c;font-size:12px;padding:20px}
 <div class="preview-wrap"><canvas id="canvas" width="720" height="1280"></canvas></div>
 <div class="actions"><button class="btn secondary" id="playBtn">▶️ प्रीव्यू चलाएँ</button><button class="btn secondary" id="stopBtn">⏹ रोकें</button></div>
 <button class="btn primary" id="makeBtn">🎥 वीडियो बनाएँ और डाउनलोड करें</button>
-<div class="meter"><div id="progress"></div></div>
-<div class="status" id="status" aria-live="polite">तैयार है। अपनी फोटो और म्यूजिक चुनें।</div>
-<p class="hint">नोट: यह ब्राउज़र-आधारित फोटो स्लाइडशो एडिटर है, AI text-to-video या पूरा टाइमलाइन वीडियो एडिटर नहीं। डाउनलोड WebM फॉर्मेट में होगा। म्यूजिक रिकॉर्डिंग कुछ मोबाइल ब्राउज़र में समर्थित न भी हो सकती है। वीडियो बनते समय पेज खुला रखें।</p>
+<div class="status" id="status" aria-live="polite">तैयार है। अपनी सामग्री चुनें।</div>
+<p class="hint">नोट: यह पहला मुफ्त एडिटर संस्करण है, असली AI text-to-video नहीं। यह आपकी फोटो, टेक्स्ट, रंग और इफेक्ट से वीडियो बनाता है। वीडियो WebM फॉर्मेट में डाउनलोड होगा। कुछ मोबाइल ब्राउज़र में डाउनलोड/आवाज़ की सुविधा अलग हो सकती है।</p>
 </section>
 </div>
 </main>
-<footer>© CG Editor Chovaram · Free Video Studio</footer>
+<footer>© Cg Editor Chovaram · Free Video Studio</footer>
 <script>
-const $=id=>document.getElementById(id),canvas=$('canvas'),ctx=canvas.getContext('2d');
-let photos=[],raf=null,recording=false,musicFile=null,previewStart=0;
-$('photos').addEventListener('change',async e=>{
- photos=[];const files=[...e.target.files].filter(f=>f.type.startsWith('image/'));
- for(const f of files){const url=URL.createObjectURL(f);const img=new Image();await new Promise(resolve=>{img.onload=resolve;img.onerror=resolve;img.src=url});if(img.naturalWidth)photos.push({img,url,name:f.name})}
- $('photoList').textContent=photos.length?photos.map((p,i)=>`${i+1}. ${p.name}`).join(' · '):'कोई फोटो नहीं चुनी गई।';draw(0);
-});
-$('music').addEventListener('change',e=>{musicFile=e.target.files[0]||null;$('musicName').textContent=musicFile?`चुना गया: ${musicFile.name}`:'कोई म्यूजिक नहीं चुना गया।'});
-function wrapText(text,maxWidth){const words=text.split(/\s+/);let lines=[],line='';for(const w of words){const test=line?line+' '+w:w;if(ctx.measureText(test).width>maxWidth&&line){lines.push(line);line=w}else line=test}if(line)lines.push(line);return lines}
-function setCanvasSize(){const r=$('ratio').value;if(r==='landscape'){canvas.width=1280;canvas.height=720}else if(r==='square'){canvas.width=900;canvas.height=900}else{canvas.width=720;canvas.height=1280}}
+const $=id=>document.getElementById(id), canvas=$('canvas'),ctx=canvas.getContext('2d');
+let photo=null, raf=null, recording=false;
+$('photo').addEventListener('change',e=>{const f=e.target.files[0];if(!f)return;const img=new Image();img.onload=()=>{photo=img;draw(0)};img.src=URL.createObjectURL(f)});
+function wrapText(text,maxWidth){const words=text.split(/\s+/);let lines=[],line='';for(const w of words){let test=line?line+' '+w:w;if(ctx.measureText(test).width>maxWidth&&line){lines.push(line);line=w}else line=test}if(line)lines.push(line);return lines}
 function draw(t=0){
- const w=canvas.width,h=canvas.height,p=Math.max(0,Math.min(1,t)),g=ctx.createLinearGradient(0,0,w,h);
- g.addColorStop(0,$('bg1').value);g.addColorStop(1,$('bg2').value);ctx.fillStyle=g;ctx.fillRect(0,0,w,h);
- const count=photos.length,idx=count?Math.min(count-1,Math.floor(p*count)):0,local=count?((p*count)%1):p;
- const photo=count?photos[idx].img:null,mode=$('motion').value;
- const top=h*.04,photoH=h*.66;
- if(photo){
-  const cover=Math.max(w/photo.width,photoH/photo.height),contain=Math.min(w/photo.width,photoH/photo.height),scale=($('fit').value==='cover'?cover:contain)*(mode==='zoom'?1+local*.10:1);
-  const iw=photo.width*scale,ih=photo.height*scale;
-  let x=(w-iw)/2,y=top+(photoH-ih)/2;
-  if(mode==='slide')x+=(1-local)*Math.min(100,w*.12);
-  ctx.save();ctx.beginPath();ctx.rect(0,top,w,photoH);ctx.clip();ctx.globalAlpha=mode==='fade'?Math.min(1,local*5,(1-local)*5+0.2):1;ctx.drawImage(photo,x,y,iw,ih);ctx.restore();
- }
- const bandY=h*.68;ctx.fillStyle='rgba(5,10,25,.55)';ctx.fillRect(0,bandY,w,h-bandY);
- const title=$('title').value||'CG Editor Chovaram',caption=$('caption').value||'',fs=Number($('fontSize').value)*(w/720);
- ctx.textAlign='center';ctx.textBaseline='middle';ctx.shadowColor=mode==='glow'?'#67e8f9':'#000';ctx.shadowBlur=mode==='glow'?30:12;ctx.fillStyle='#fff';ctx.font=`800 ${fs}px system-ui,sans-serif`;
- const lines=wrapText(title,w-90);let y=h*.76-(lines.length-1)*fs*.62;lines.forEach(line=>{ctx.fillText(line,w/2,y);y+=fs*1.25});
- ctx.shadowBlur=0;ctx.fillStyle='#e0f2fe';ctx.font=`${Math.max(22,fs*.62)}px system-ui,sans-serif`;
- const caps=wrapText(caption,w-100).slice(0,4);y=h*.86;caps.forEach(line=>{ctx.fillText(line,w/2,y);y+=Math.max(30,fs*.72)});
- ctx.fillStyle='#c4b5fd';ctx.font=`bold ${Math.max(18,fs*.52)}px system-ui`;ctx.fillText('CG EDITOR CHOVARAM',w/2,h*.96);
+ const w=canvas.width,h=canvas.height,p=Math.max(0,Math.min(1,t));
+ const g=ctx.createLinearGradient(0,0,w,h);g.addColorStop(0,$('bg1').value);g.addColorStop(1,$('bg2').value);ctx.fillStyle=g;ctx.fillRect(0,0,w,h);
+ const mode=$('motion').value, zoom=mode==='zoom'?1+p*.12:1, shift=mode==='slide'?(1-p)*90:0;
+ if(photo){const scale=Math.max(w/photo.width,h/photo.height)*zoom,iw=photo.width*scale,ih=photo.height*scale;ctx.save();ctx.beginPath();ctx.rect(0,0,w,h*.68);ctx.clip();ctx.globalAlpha=.9;ctx.drawImage(photo,(w-iw)/2+shift,(h*.60-ih)/2,iw,ih);ctx.restore()}
+ ctx.fillStyle='rgba(5,10,25,.48)';ctx.fillRect(0,h*.58,w,h*.42);
+ const title=$('title').value||'Cg Editor Chovaram',caption=$('caption').value||'';
+ const fs=Number($('fontSize').value);ctx.textAlign='center';ctx.textBaseline='middle';ctx.shadowColor=mode==='glow'?'#67e8f9':'#000';ctx.shadowBlur=mode==='glow'?30:12;
+ ctx.fillStyle='#fff';ctx.font=`800 ${fs}px system-ui, sans-serif`;
+ const lines=wrapText(title,w-90);let y=h*.73-(lines.length-1)*fs*.62;
+ lines.forEach(line=>{ctx.fillText(line,w/2,y);y+=fs*1.25});
+ ctx.shadowBlur=0;ctx.fillStyle='#e0f2fe';ctx.font='32px system-ui, sans-serif';
+ const caps=wrapText(caption,w-100).slice(0,4);y=h*.84;caps.forEach(line=>{ctx.fillText(line,w/2,y);y+=42});
+ ctx.fillStyle='#c4b5fd';ctx.font='bold 25px system-ui';ctx.fillText('CG EDITOR CHOVARAM',w/2,h-70);
 }
 function setStatus(s){$('status').textContent=s}
-function play(){if(raf)cancelAnimationFrame(raf);const start=performance.now(),dur=Number($('duration').value)*1000;function frame(now){const p=(now-start)/dur;draw(Math.min(1,p));if(p<1)raf=requestAnimationFrame(frame);else raf=null}raf=requestAnimationFrame(frame)}
-$('ratio').addEventListener('change',()=>{setCanvasSize();draw(0)});
+function play(){if(raf)cancelAnimationFrame(raf);const start=performance.now(),dur=Number($('duration').value)*1000;function frame(now){let p=(now-start)/dur;draw(Math.min(1,p));if(p<1)raf=requestAnimationFrame(frame);else raf=null}raf=requestAnimationFrame(frame)}
 $('previewBtn').onclick=()=>{draw(0);setStatus('प्रीव्यू अपडेट हो गया।')};
 $('playBtn').onclick=()=>play();
 $('stopBtn').onclick=()=>{if(raf)cancelAnimationFrame(raf);raf=null;draw(0);setStatus('प्रीव्यू रोक दिया गया।')};
 $('makeBtn').onclick=async()=>{
  if(recording)return;
- if(!canvas.captureStream||!window.MediaRecorder){setStatus('आपके ब्राउज़र में रिकॉर्डिंग समर्थित नहीं है। Chrome में खोलकर देखें।');return}
- recording=true;$('makeBtn').disabled=true;$('progress').style.width='0%';setStatus('वीडियो तैयार हो रहा है… कृपया पेज खुला रखें।');
- const seconds=Number($('duration').value),canvasStream=canvas.captureStream(30);let stream=canvasStream,audioContext=null,audioElement=null,audioUrl=null;
- try{
-  if(musicFile&&window.AudioContext){
-   audioContext=new AudioContext();await audioContext.resume();audioElement=new Audio();audioUrl=URL.createObjectURL(musicFile);audioElement.src=audioUrl;audioElement.loop=true;audioElement.volume=.85;
-   const source=audioContext.createMediaElementSource(audioElement),dest=audioContext.createMediaStreamDestination();source.connect(dest);source.connect(audioContext.destination);await audioElement.play();
-   dest.stream.getAudioTracks().forEach(track=>stream.addTrack(track));
-  }
-  let mime='video/webm;codecs=vp9,opus';if(!MediaRecorder.isTypeSupported(mime))mime='video/webm';
-  const chunks=[];let recorder;try{recorder=new MediaRecorder(stream,{mimeType:mime})}catch(e){recorder=new MediaRecorder(stream)}
-  recorder.ondataavailable=e=>{if(e.data.size)chunks.push(e.data)};
-  recorder.onerror=()=>{setStatus('रिकॉर्डिंग में समस्या आई। Chrome में फिर प्रयास करें।');cleanup()};
-  recorder.onstop=()=>{const blob=new Blob(chunks,{type:recorder.mimeType||'video/webm'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='cg-editor-chovaram-video.webm';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);cleanup();setStatus('वीडियो डाउनलोड शुरू हो गया। Downloads फ़ोल्डर देखें।');$('progress').style.width='100%'};
-  function cleanup(){if(audioElement){audioElement.pause();audioElement.src='';}if(audioUrl)URL.revokeObjectURL(audioUrl);if(audioContext)audioContext.close();stream.getTracks().forEach(t=>t.stop());recording=false;$('makeBtn').disabled=false}
-  recorder.start();const start=performance.now();
-  function frame(now){const p=Math.min(1,(now-start)/(seconds*1000));draw(p);$('progress').style.width=(p*100)+'%';if(p<1)requestAnimationFrame(frame);else setTimeout(()=>{if(recorder.state!=='inactive')recorder.stop()},250)}
-  requestAnimationFrame(frame);
- }catch(err){stream.getTracks().forEach(t=>t.stop());if(audioContext)audioContext.close();if(audioUrl)URL.revokeObjectURL(audioUrl);recording=false;$('makeBtn').disabled=false;setStatus('म्यूजिक/वीडियो शुरू नहीं हो पाया। बिना म्यूजिक या Chrome में फिर प्रयास करें।')}
+ if(!canvas.captureStream||!window.MediaRecorder){setStatus('आपके ब्राउज़र में वीडियो रिकॉर्डिंग समर्थित नहीं है। Chrome में खोलकर देखें।');return}
+ recording=true;$('makeBtn').disabled=true;setStatus('वीडियो तैयार हो रहा है… कृपया पेज खुला रखें।');
+ const seconds=Number($('duration').value),stream=canvas.captureStream(30);
+ let mime='video/webm;codecs=vp9';if(!MediaRecorder.isTypeSupported(mime))mime='video/webm';
+ let chunks=[];let recorder;try{recorder=new MediaRecorder(stream,{mimeType:mime})}catch(e){recorder=new MediaRecorder(stream)}
+ recorder.ondataavailable=e=>{if(e.data.size)chunks.push(e.data)};
+ recorder.onstop=()=>{const blob=new Blob(chunks,{type:'video/webm'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='cg-editor-chovaram-video.webm';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);stream.getTracks().forEach(t=>t.stop());recording=false;$('makeBtn').disabled=false;setStatus('वीडियो डाउनलोड हो गया! आपके Downloads फ़ोल्डर में देखें।')};
+ if($('voice').value==='on'&&'speechSynthesis'in window&&$('caption').value){speechSynthesis.cancel();const u=new SpeechSynthesisUtterance($('caption').value);u.lang='hi-IN';speechSynthesis.speak(u)}
+ recorder.start();const start=performance.now();
+ function frame(now){const p=Math.min(1,(now-start)/(seconds*1000));draw(p);if(p<1)requestAnimationFrame(frame);else setTimeout(()=>recorder.stop(),250)}
+ requestAnimationFrame(frame);
 };
-setCanvasSize();draw(0);
+draw(0);
 </script>
-</body>
-</html>
+</body></html>
